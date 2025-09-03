@@ -1,0 +1,4 @@
+.venv
+*.egg-info
+templates/output/*
+__pycache__

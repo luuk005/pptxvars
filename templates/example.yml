@@ -1,0 +1,8 @@
+# Required for the output path
+STEM: "example"
+DATE: "September 2025"
+
+# Variables to replace in the PPTX
+AUTHOR: "Luuk"
+KEY4: "Value4"
+KEY5: "Value5"
