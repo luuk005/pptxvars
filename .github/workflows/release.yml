@@ -30,6 +30,7 @@ jobs:
 
       - name: Build
         run: |
+          uv sync --dev
           uv run python -m pip install -U build
           uv run python -m build
 
