@@ -45,7 +45,7 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
-          $VER = uv version | ForEach-Object { $_.Split()[-1] }
+          $VER = uv version | awk '{print $NF}'}
           uvx twine check "dist/*$VER*"
           uvx twine upload --repository testpypi "dist/*$VER*"
 
@@ -55,6 +55,6 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          $VER = uv version | ForEach-Object { $_.Split()[-1] }
+          $VER = uv version | awk '{print $NF}'}
           uvx twine check "dist/*$VER*"
           uvx twine upload "dist/*$VER*"
