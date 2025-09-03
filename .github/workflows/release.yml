@@ -31,8 +31,7 @@ jobs:
           uv version --bump "${{ inputs.part }}"
           git add pyproject.toml
           git commit -m "bump: ${{ inputs.part }}"
-          git tag "version-${{ inputs.part }}"
-          git push && git push --tags
+          git push
 
       - name: Build
         run: |
