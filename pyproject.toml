@@ -1,6 +1,6 @@
 [project]
 name = "pptxvars"
-version = "0.1.8"
+version = "1.0.0"
 description = "Replace {{KEY}} tokens in PPTX while preserving styling"
 readme = "README.md"
 requires-python = ">=3.12"
