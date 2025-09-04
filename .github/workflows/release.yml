@@ -48,7 +48,7 @@ jobs:
         run: |
           $VER = uv version | awk '{print $NF}'
           uvx twine check "dist/*$VER*"
-          uvx twine upload --repository testpypi "dist/*$VER*"
+          uvx twine upload --repository testpypi "dist/*$VER*" --verbose
 
       - name: Publish (PyPI)
         if: inputs.repo == 'pypi'
@@ -58,4 +58,4 @@ jobs:
         run: |
           $VER = uv version | awk '{print $NF}'
           uvx twine check "dist/*$VER*"
-          uvx twine upload "dist/*$VER*"
+          uvx twine upload "dist/*$VER*" --verbose
