@@ -5,7 +5,7 @@ description = "Replace {{KEY}} tokens in PPTX while preserving styling"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "python-pptx>=1.0.2",
+    "python-pptx>=0.1.2",
     "pyyaml>=6.0.2",
 ]
 
