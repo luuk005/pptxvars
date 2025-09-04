@@ -6,6 +6,14 @@
 
 ---
 
+#### Install [pptxvars](https://pypi.org/project/pptxvars/)
+
+```
+pip install pptxvars
+```
+
+---
+
 ## Replace Variables
 
 1. Create a custom powerpoint presentation

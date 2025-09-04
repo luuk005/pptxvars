@@ -1,11 +1,11 @@
 [project]
 name = "pptxvars"
 version = "1.0.0"
-description = "Replace {{KEY}} tokens in PPTX while preserving styling"
+description = "Replace {{KEY}} tokens in PPTX while preserving styling & swap frame shapes for images in while preserving sizes"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "python-pptx>=0.1.2",
+    "python-pptx>=1.0.2",
     "pyyaml>=6.0.2",
 ]
 
