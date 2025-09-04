@@ -54,7 +54,7 @@ jobs:
         if: inputs.repo == 'pypi'
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
           $VER = uv version | awk '{print $NF}'
           uvx twine check "dist/*$VER*"
