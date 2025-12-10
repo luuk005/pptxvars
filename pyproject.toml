@@ -1,6 +1,6 @@
 [project]
 name = "pptxvars"
-version = "1.0.1"
+version = "1.0.2"
 description = "Replace {{KEY}} tokens in PPTX while preserving styling & swap frame shapes for images in while preserving sizes"
 readme = "README.md"
 requires-python = ">=3.11"
