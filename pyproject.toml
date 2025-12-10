@@ -3,7 +3,7 @@ name = "pptxvars"
 version = "1.0.1"
 description = "Replace {{KEY}} tokens in PPTX while preserving styling & swap frame shapes for images in while preserving sizes"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "python-pptx>=1.0.2",
     "pyyaml>=6.0.2",
